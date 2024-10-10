@@ -121,6 +121,28 @@ public class Main {
             System.out.println("You are not very kind.");
         }
         
+        // More else if and else examples
+        // Change the below values to try and get every condition!
+        int x = 5;
+        int y = 10;
+        
+        // We can have lots of different else if statements and then one final else statement to catch everything else that doesn't fit the other conditions
+        if (x  > y){
+            System.out.println("x is greater than y");
+        }
+        else if (x < y){
+            System.out.println("x is less than y");
+        }
+        else if (x >y && x < 8) {
+            System.out.println("x is greater than y and less than 8");
+        }
+        else if (x < y && x > 3) {
+            System.out.println("x is less than y and greater than 3");
+        }
+        else {
+            System.out.println("x is equal to y");
+        }
+        
         // If they are a robot print a different message
         if (isRobot) {
             System.out.println("Beep boop! You are a robot!");
