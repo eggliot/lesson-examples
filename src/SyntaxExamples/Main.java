@@ -66,6 +66,20 @@ public class Main {
         // 0
         int s = 78 % 70; // Finding the remainder of 78 divided by 70 and storing the result in s
         // 8
+        
+        // Assignment Operators
+        int t = 5;
+        t += 10; // Equivalent to t = t + 10;
+        // 15
+        t -= 5; // Equivalent to t = t - 5;
+        // 10
+        t *= 2; // Equivalent to t = t * 2;
+        // 20
+        t /= 4; // Equivalent to t = t / 4;
+        // 5
+        t %= 3; // Equivalent to t = t % 3;
+        // 2
+        
 
         System.out.println("\n\n");
         
