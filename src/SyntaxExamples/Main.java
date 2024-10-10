@@ -80,6 +80,112 @@ public class Main {
         t %= 3; // Equivalent to t = t % 3;
         // 2
         
+        
+        // Conditionals
+        int u = 5;
+        int v = 10;
+        if (u > 2) {
+            System.out.println("u is greater than 2");
+        }
+        
+        if (u < v) {
+            System.out.println("u is less than v");
+        }
+        else if (u == v) {
+            System.out.println("u is equal to v");
+        }
+        else {
+            System.out.println("u is not less than v");
+        }
+        
+         /*
+         The order of if and else if statements matters
+         The first condition that is true will be executed
+         
+         If the kindness is greater than 50, the first block will be executed
+            If the kindness is greater than 25 but not greater than 50, the second block will be executed
+                If the kindness is less than or equal to 25, the third block will be executed
+         
+         If no conditions are true, the else block will be executed
+         If there is no else block, nothing will happen if no conditions are true 
+         */
+        int kindness = 30; // Change this value to test the condition
+        
+        if (kindness > 50) {
+            System.out.println("You are very kind!");
+        }
+        else if (kindness > 25) {
+            System.out.println("You are kind!");
+        }
+        else { // if kindness is less than or equal to 25
+            System.out.println("You are not very kind.");
+        }
+        
+        // If they are a robot print a different message
+        if (isRobot) {
+            System.out.println("Beep boop! You are a robot!");
+        }
+        else {
+            System.out.println("Hello, " + name + "! You are not a robot :(");
+        }
+        
+        if (age >= 18) {
+            System.out.println("You are an adult!");
+        }
+        else {
+            System.out.println("You are not an adult.");
+        }
+        
+        // Logical Operators
+        // && - AND
+        // || - OR
+        // ! - NOT
+        if (age >= 18 && isRobot) {
+            System.out.println("You are an adult robot!");
+        }
+        else {
+            System.out.println("You are not an adult robot.");
+        }
+
+        // If they are a robot or an adult print a different message
+        if (isRobot || age >= 18) {
+            System.out.println("You are either a robot or an adult!");
+        }
+        else {
+            System.out.println("You are neither a robot nor an adult.");
+        }
+        
+        // Using the NOT ( ! ) operator is the inverse of a condition. Essentially it flips the condition
+        if (!isRobot) { 
+            System.out.println("You are not a robot!");
+        }
+        else {
+            System.out.println("You are a robot!");
+        }
+        
+        // Nested Conditionals
+        // There are benefits to not using logical operators but if you need to check two conditions at the same time it is easier to use them instead of multiple nested conditions
+        if (age >= 18) {
+            if (isRobot) {
+                System.out.println("You are an adult robot!");
+            }
+            else {
+                System.out.println("You are an adult!");
+            }
+        }
+        else {
+            if (isRobot) {
+                System.out.println("You are a robot!");
+            }
+            else {
+                System.out.println("You are not an adult or a robot.");
+            }
+        }
+        
+
+        
+        
+        
 
         System.out.println("\n\n");
         
